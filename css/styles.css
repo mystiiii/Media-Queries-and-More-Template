@@ -337,14 +337,11 @@ img {
    
    1. TABLET (768px+)
    2. LAPTOP (992px+) 
-   3. DESKTOP (1200px+)
    
    Common adjustments to consider:
    - Container max-widths
-   - Column layouts (make .col-lg-4 work as 3 columns)
    - Font sizes
    - Spacing (padding/margins)
-   - Navigation layout
    - Image sizes
    
    TIP: Test your changes at each breakpoint using browser dev tools!
@@ -361,11 +358,21 @@ img {
    Example tasks:
    - Increase container max-width
    - Adjust typography sizes
-   - Start transitioning footer columns to side-by-side
 */
 
 @media (min-width: 768px) {
   /* Add your tablet styles here */
+  .container {
+  }
+  
+  h1 {
+  }
+  
+  .masthead .masthead-heading {
+  }
+  
+  .masthead .masthead-subheading {
+  }
   
 }
 
@@ -378,7 +385,6 @@ img {
    
    TODO: Add your laptop-specific styles here
    Example tasks:
-   - Make .col-lg-4 display as 3 columns (33.333% width each)
    - Increase font sizes for headings
    - Adjust masthead avatar size
    - Fine-tune spacing
@@ -386,7 +392,26 @@ img {
 
 @media (min-width: 992px) {
   /* Add your laptop styles here */
+  .container {
+  }
   
+  .col-lg-4 {
+  }
+  
+  h1 {
+  }
+  
+  h4 {
+  }
+  
+  .masthead .masthead-heading {
+  }
+  
+  .masthead .masthead-avatar {
+  }
+  
+  .mb-lg-0 {
+  }
 }
 
 /* ==========================================
@@ -402,3 +427,17 @@ img {
    - Optimize spacing for wider screens
    - Enhance visual elements for larger displays
 */
+@media (min-width: 1200px) {
+  /* Add your laptop styles here */
+  .container {
+  }
+  
+  h1 {
+  }
+  
+  h4 {
+  }
+  
+  .masthead .masthead-heading {
+  }
+}
