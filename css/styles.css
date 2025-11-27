@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+/* CSS Variables */
+:root {
+  --bs-primary: #1abc9c;
+  --bs-secondary: #2c3e50;
+  --bs-white: #fff;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --bs-border-radius: 0.5rem;
+  --bs-link-color: #1abc9c;
+  --bs-link-hover-color: #15967d;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base Styles - Mobile First */
+body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+}
+
+html {
+  height: 100%;
+  scroll-padding-top: calc(4.5rem - 1px);
+}
+
+/* Typography */
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Links */
+a {
+  color: var(--bs-link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+/* Images */
+img {
+  vertical-align: middle;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0.125rem solid transparent;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container - Mobile First */
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Grid System - Mobile First */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+.row > * {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+/* Navigation */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.navbar > .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* Main Navigation Styles */
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+#mainNav .navbar-brand {
+  color: #fff;
+}
+
+/* Utility Classes */
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-white {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.bg-primary {
+  background-color: rgba(26, 188, 156, 1) !important;
+}
+
+.bg-secondary {
+  background-color: rgba(44, 62, 80, 1) !important;
+}
+
+/* Margin Utilities */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.mx-1 {
+  margin-right: 0.25rem !important;
+  margin-left: 0.25rem !important;
+}
+
+.mb-lg-0 {
+  margin-bottom: 0 !important;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+/* Custom Divider */
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
+}
+
+/* Masthead */
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+}
+
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+/* Footer */
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* ========================================
+   MEDIA QUERIES - MOBILE FIRST APPROACH
+   ======================================== */
+
+/* 
+   INSTRUCTIONS FOR WORKSHOP PARTICIPANTS:
+   
+   This template is built mobile-first, meaning all the styles above
+   are designed for mobile devices (320px and up).
+   
+   Your task is to add responsive styles for larger screens using
+   media queries below. Work through each breakpoint in order:
+   
+   1. TABLET (768px+)
+   2. LAPTOP (992px+) 
+   3. DESKTOP (1200px+)
+   
+   Common adjustments to consider:
+   - Container max-widths
+   - Column layouts (make .col-lg-4 work as 3 columns)
+   - Font sizes
+   - Spacing (padding/margins)
+   - Navigation layout
+   - Image sizes
+   
+   TIP: Test your changes at each breakpoint using browser dev tools!
+*/
+
+/* ==========================================
+   TABLET STYLES (768px and up)
+   ========================================== */
+/* 
+   Target: Tablets in portrait and landscape
+   Common devices: iPad, Android tablets
+   
+   TODO: Add your tablet-specific styles here
+   Example tasks:
+   - Increase container max-width
+   - Adjust typography sizes
+   - Start transitioning footer columns to side-by-side
+*/
+
+@media (min-width: 768px) {
+  /* Add your tablet styles here */
+  
+}
+
+/* ==========================================
+   LAPTOP STYLES (992px and up)
+   ========================================== */
+/* 
+   Target: Small laptops and desktops
+   Common devices: 13-15" laptops
+   
+   TODO: Add your laptop-specific styles here
+   Example tasks:
+   - Make .col-lg-4 display as 3 columns (33.333% width each)
+   - Increase font sizes for headings
+   - Adjust masthead avatar size
+   - Fine-tune spacing
+*/
+
+@media (min-width: 992px) {
+  /* Add your laptop styles here */
+  
+}
+
+/* ==========================================
+   DESKTOP STYLES (1200px and up)
+   ========================================== */
+/* 
+   Target: Large desktops and monitors
+   Common devices: 20"+ monitors, large screens
+   
+   TODO: Add your desktop-specific styles here
+   Example tasks:
+   - Set maximum container width (e.g., 1140px)
+   - Optimize spacing for wider screens
+   - Enhance visual elements for larger displays
+*/
+
+@media (min-width: 1200px) {
+  /* Add your desktop styles here */
+  
+}
+
+/* ==========================================
+   EXTRA LARGE DESKTOP (1400px and up) - OPTIONAL
+   ========================================== */
+/* 
+   Target: Extra large monitors
+   
+   BONUS: Add styles for very large screens if time permits
+*/
+
+@media (min-width: 1400px) {
+  /* Add your extra large desktop styles here (optional) */
+  
+}
