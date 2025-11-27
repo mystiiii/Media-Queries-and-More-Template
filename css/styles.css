@@ -307,6 +307,13 @@ img {
   width: 15rem;
 }
 
+.masthead img[src*="Photo.jpg"] {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 2rem;
+}
+
 /* Footer */
 .footer {
   padding-top: 5rem;
@@ -395,22 +402,3 @@ img {
    - Optimize spacing for wider screens
    - Enhance visual elements for larger displays
 */
-
-@media (min-width: 1200px) {
-  /* Add your desktop styles here */
-  
-}
-
-/* ==========================================
-   EXTRA LARGE DESKTOP (1400px and up) - OPTIONAL
-   ========================================== */
-/* 
-   Target: Extra large monitors
-   
-   BONUS: Add styles for very large screens if time permits
-*/
-
-@media (min-width: 1400px) {
-  /* Add your extra large desktop styles here (optional) */
-  
-}
